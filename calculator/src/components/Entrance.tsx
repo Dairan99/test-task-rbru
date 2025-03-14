@@ -18,7 +18,7 @@ export const Entrance = () => {
                        <p className={styles.entrance__text}>Онлайн-калькулятор расчета обоев по поможет вам определить число рулонов, требуемых для оклеивания, с учетом окон и дверей. Чтобы получить точные результаты, просто укажите параметры помещения и размеры в специальной таблице. Наша программа также берет в учет повторение рисунка (раппорт), что позволяет оптимизировать расходы на материалы и клей.</p>
                        <button className={`${styles.entrance__button} btn`} onClick={handleButtonClick}>
                             <svg className={styles.entrance__icon} width='22' height='22'>
-                                <use xlinkHref='/public/sprite.svg#icon'></use>
+                                <use xlinkHref='/test-task-rbru/public/sprite.svg#icon'></use>
                             </svg>
                             <span className={styles.entrance__textButton}>Начать расчет материалов</span>
                         </button>

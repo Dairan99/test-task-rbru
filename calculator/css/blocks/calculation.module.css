@@ -1,0 +1,511 @@
+.calculation {
+    position: absolute;
+    top: 0;
+    max-width: 990px;
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+}
+
+.calculationForm__IconCrossButton {
+    display: block;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    @media (max-width: 764px) {
+        display: none;
+    }
+}
+
+.calculationForm {
+    display: flex;
+    flex-direction: column;
+    padding: 58px 0 0;
+    height: 100%;
+
+    @media (max-width: 764px) {
+        padding: 22px 0 0;
+    }
+}
+
+.calculationForm__groupName {
+    font-family: "Inter", "Aria", "sans-serif";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(17, 17, 17, 0.8);
+    margin: 0 0 24px;
+
+    @media (max-width: 764px) {
+        margin: 0 0 24px 0;
+    }
+}
+
+.calculationForm__wrapper {
+    display: flex;
+    gap: 16px;
+    flex-grow: 1;
+
+    @media (max-width: 520px) {
+        flex-direction: column;
+    }
+}
+
+.calculationForm__inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.calculationForm__label {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(17, 17, 17, 0.8);
+}
+
+.calculationForm__input {
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    padding: 0 0 0 16px;
+    border: 1px solid rgba(0, 0, 0, 0.32);
+    color: rgba(17, 17, 17, 0.64);
+    min-width: 100%;
+}
+
+.calculationForm__windowGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calculationForm__windowName {
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.calculationForm__windowButtonCross {
+    margin: 0;
+    padding: 0;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.calculationForm__windowInput {
+    max-width: 107px;
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    padding: 0 0 0 16px;
+    border: 1px solid rgba(0, 0, 0, 0.32);
+    color: rgba(17, 17, 17, 0.64);
+    min-width: 100%;
+}
+
+.calculationForm__windowData {
+    display: flex;
+    gap: 16px;
+}
+
+.calculation-form__input::placeholder {
+    color: rgba(0, 0, 0, 0.32);
+}
+
+.calculationForm__flexWrapper {
+    display: flex;
+    gap: 64px;
+
+    @media (max-width: 764px) {
+        flex-direction: column;
+        gap: 48px;
+    }
+}
+
+.calculationForm__groupRoll {
+    max-width: 338px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.calculationForm__rollParametrs {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+
+    @media (max-width: 764px) {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+}
+
+.calculationForm__rollButtonNormal {
+    max-width: 142px;
+    width: 100%;
+    height: 57px;
+
+    @media (max-width: 764px) {
+        max-width: 118px;
+        height: 44px;
+
+    }
+}
+
+.calculationForm__rollButtonBig {
+    max-width: 180px;
+    width: 100%;
+    height: 57px;
+
+    
+    @media (max-width: 764px) {
+        max-width: 148px;
+        height: 44px;
+
+    }
+}
+
+.calculationForm__rollButtonRapportNormal {
+    max-width: 142px;
+    width: 100%;
+    height: 57px;
+
+    
+    @media (max-width: 764px) {
+        max-width: 118px;
+        height: 44px;
+
+    }
+}
+
+.calculationForm__rollButtonRapportBig {
+    max-width: 180px;
+    width: 100%;
+    height: 57px;
+
+    
+    @media (max-width: 764px) {
+        max-width: 148px;
+        height: 44px;
+
+    }
+}
+
+.calculationForm__rollButtonRapportSmall {
+    max-width: 74px;
+    width: 100%;
+    height: 57px;
+
+    
+    @media (max-width: 764px) {
+        max-width: 50px;
+        height: 44px;
+    }
+}
+
+.active {
+    background-color: #526EFF;
+}
+
+.calculationForm__rollButtonNormal:not(.active),
+.calculationForm__rollButtonBig:not(.active),
+.calculationForm__rollButtonRapportSmall:not(.active),
+.calculationForm__rollButtonRapportBig:not(.active),
+.calculationForm__rollButtonRapportNormal:not(.active) {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.calculationForm__addButton {
+    position: relative;
+    width: 266px;
+    height: 180px;
+    border: 1px dashed #526EFF;
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.calculationForm__window {
+    position: relative;
+    width: 266px;
+    height: 180px;
+    border: 1px dashed #526EFF;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.calculationForm__addButton:hover .calculationForm__space {
+    background-color: #3652E3;
+}
+
+.calculationForm__space {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    background-color: rgba(82, 110, 255, 0.20);
+    margin: 51px auto 85px;
+    transition: background-color 0.3s ease;
+}
+
+.calculationForm__iconSheet {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calculationForm__add {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(17, 17, 17, 0.8);
+}
+
+.calculationForm__groupDoor {
+    padding: 0;
+    border: none;
+    margin: 0 0 73px 0;
+}
+
+.calculationForm__button {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    max-width: 328px;
+    width: 100%;
+    height: 56px;
+    padding: 15px 32px 17px 32px;
+    margin: 0 0 64px 0;
+
+    @media (max-width: 764px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.calculationForm__buttonAdaptiveText {
+    display: none;
+
+    @media (max-width: 764px) {
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.calculationForm__buttonText {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (max-width: 764px) {
+        display: none;
+        
+    }
+}
+
+.calculationForm__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content:flex-start;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    @media (max-width: 391px) {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    @media (max-width: 500px) {
+        gap: 16px;
+    }
+}
+
+.calculationForm__item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 16px 18px 18px 18px;
+    position: relative;
+    width: 266px;
+    height: 180px;
+    border: 1px dashed #526EFF;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.calculationForm__group {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    margin: 0 0 42px 0;
+}
+
+.calculationForm__addItem {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin: 0 0 42px 0;
+}
+
+.calculationForm__result {
+    width: 100%;
+    height: 297px;
+    border-radius: 18px;
+    background-color: #526EFF;
+    border: none;
+    padding: 42px 52px;
+    margin: 0;
+
+    @media (max-width: 764px) {
+        max-height: 451px;
+        height: 100%;
+        padding: 18px;
+    }
+}
+
+.calculationForm__resultTitle {
+    font-family: "Inter", "Aria", "sans-serif";
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0 0 24px 0;
+
+    @media (max-width: 764px) {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+.calculationForm__resultWrapper {
+    display: flex;
+    gap: 54px;
+    margin: 0 0 32px 0;
+
+    @media (max-width: 764px) {
+        flex-direction: column;
+        gap: 22px;
+    }
+}
+
+.calculationForm__resultData {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.calculationForm__resultNumber {
+    font-family: "Inter", "Aria", "sans-serif";
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.calculationForm__resultText {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #FFFFFFA3;
+}
+
+.calculationForm__resultButtonWrapper {
+    display: flex;
+    gap:16px;
+
+    @media (max-width: 764px) {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+.calculationForm__resultButtonReset {
+    max-width: 235px;
+    width: 100%;
+    height: 56px;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #526EFF;
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+
+    @media (max-width: 764px) {
+        max-width: 284px;
+        height: 44px;
+    }
+}
+
+.calculationForm__resultButton {
+    max-width: 204px;
+    width: 100%;
+    height: 56px;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5ACD66;
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+
+    @media (max-width: 764px) {
+        max-width: 284px;
+        height: 44px;
+    }
+}
+
+.calculationForm__IconCrossButtonFlex {
+    display: none;
+
+    @media (max-width: 764px) {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+.calculationForm__groupCrossFlex {
+    display: none;
+
+    @media (max-width: 764px) {
+        display: flex;
+        margin: 0 0 24px;
+        gap: 54px;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    
+}

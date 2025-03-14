@@ -1,0 +1,87 @@
+.entrance {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 58px 0;
+    max-width: 796px;
+    max-height: 478px;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-radius: 18px;
+
+    @media (max-width: 764px) {
+        padding: 30px 60px;
+        max-height: 430px;
+        height: auto;
+        padding: 28px 0;
+    }
+
+    @media (max-width: 475px) {
+        padding: 30px 60px;
+        max-height: 430px;
+        height: 100%;
+        padding: 28px 0;
+    }
+}
+
+.entrance__wrapper {
+    max-height: 362px;
+    height: 100%;
+}
+
+.entrance__title {
+    font-family: "Inter", "Aria", "sans-serif";
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    margin: 0 0 18px;
+
+    @media (max-width: 764px) {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    @media (max-width: 475px) {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+.entrance__text {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0 0 48px;
+
+    @media (max-width: 764px) {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 0 24px;
+    }
+}
+
+.entrance__button {
+    display: flex;
+    gap: 4px;
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    max-width: 296px;
+    height: 56px;
+    padding: 15px 30px 17px 36px;
+    margin: 0 auto;
+    justify-content: center;
+
+    @media (max-width: 764px) {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.entrance__textButton {
+    width: 204px;
+    font-size: 16px;
+    line-height: 24px;
+}

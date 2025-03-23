@@ -3,8 +3,8 @@
 
 ## Установка
 
-1.  Склонируйте репозиторий: https://github.com/Dairan99/Final-JS
-2.  Перейдите в директорию проекта: `cd stud_proj`
+1.  Склонируйте репозиторий: https://github.com/Dairan99/test-task-rbru
+2.  Перейдите в директорию проекта: `calculator`
 
 ## Использование
 
